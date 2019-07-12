@@ -1,6 +1,5 @@
 function mostrar(){ 
     var edad;
-    var mostrar;
 //tomo la edad  
     edad=document.getElementById("edad").value;
 

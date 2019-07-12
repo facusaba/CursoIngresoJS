@@ -2,7 +2,6 @@ function mostrar()
 {
     //tomo la edad  
     var edad;
-    var mostrar;
 
     edad=document.getElementById("edad").value;
 
