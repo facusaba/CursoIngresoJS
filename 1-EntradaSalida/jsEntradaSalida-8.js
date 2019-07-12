@@ -8,8 +8,6 @@ function SacarResto()
     var divisor;
     var SacarResto;
 
-    //si da error en el ID, inspeccionar elemento
-
     dividendo=document.getElementById("numeroDividendo").value;
     divisor=document.getElementById("numeroDivisor").value;
 
@@ -17,6 +15,6 @@ function SacarResto()
     divisor=parseInt(divisor);
 
     SacarResto=dividendo%divisor;
-    alert("El resto es "+SacarResto);
-
+    alert("el resto es "+SacarResto);
+    
 }
