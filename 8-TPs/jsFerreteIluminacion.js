@@ -17,21 +17,58 @@ function CalcularPrecio ()
 
     lamparas=document.getElementById("Cantidad").value;
 
+    lamparas=parseInt(lamparas);
+
     marca=document.getElementById("Marca").value;
-    //como se cual marca elije el usuario?
 
     if(lamparas>=6)
     {
         precioDescuento=35*50/100;
-    }else
+    }
+    else if(lamparas==5)
+    {
+        if(marca=="ArgentinaLuz")
         {
-            //
+            precioDescuento=35*40/100;
+        }
+        else
+        {
+            precioDescuento=35*35/100;
         }
 
+    }
+    else if(lamparas==4)
+    {
+        if(marca=="ArgentinaLuz"||marca=="FelipeLamparas")
+        {
+            precioDescuento=35*25/100;
+        }
+        else
+        {
+            precioDescuento=35*20/100;
+        }
+    }
+    else if(lamparas==3) //arreglar desde aca
+    {
+        if(marca=="ArgentinaLuz")
+        {
+            precioDescuento=35*15/100;
+        }
+            
+        }
+        else
+        {
+            
+        if(marca=="FelipeLamparas"){
+                precioDescuento=35*10/100;
 
+            }else{
+                //otra marca
+                precioDescuento=35*5/100;
+            }
+        }
+    }
 
-
-    //muestra precio con descuento por unidad
-    document.getElementById("precioDescuento").value=precioDescuento;
+    document.getElementById("precioDescuento").value=precioDescuento*lamparas;
 
 }
