@@ -48,22 +48,21 @@ function CalcularPrecio ()
             precioDescuento=35*20/100;
         }
     }
-    else if(lamparas==3) //arreglar desde aca
+    else if(lamparas==3)
     {
         if(marca=="ArgentinaLuz")
         {
             precioDescuento=35*15/100;
         }
-            
-        }
-        else
+        else 
         {
             
-        if(marca=="FelipeLamparas"){
+            if(marca=="FelipeLamparas")
+            {
                 precioDescuento=35*10/100;
-
-            }else{
-                //otra marca
+            }
+            else
+            {
                 precioDescuento=35*5/100;
             }
         }
